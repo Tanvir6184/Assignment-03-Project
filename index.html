@@ -197,7 +197,7 @@
             </div>
           </div>
           <div class="flex p-6 gap-x-4">
-            <div><img src="./assets/commercial.png" alt="" /></div>
+            <div><img class="" src="./assets/commercial.png" alt="" /></div>
             <div class="space-y-2 lg:w-[308px]">
               <h4 class="text-xl font-extrabold">Commercial</h4>
               <p class="text-base font-medium">
@@ -218,7 +218,13 @@
           </div>
         </div>
         <!-- COMMERCIAL IMAGE RECTANGLE  -->
-        <div class="sm:p-5"><img src="./assets/Rectangle.png" alt="" /></div>
+        <div class="p-5">
+          <img
+            class="w-[335px] lg:w-[573px] mx-auto"
+            src="./assets/Rectangle.png"
+            alt=""
+          />
+        </div>
       </section>
       <!-- WORK PROGRESS SECTION  -->
       <section class="pt-[60px]">
@@ -343,7 +349,7 @@
         <h1 class="lg:text-[40px] font-bold lg:font-black">
           Our Latest Portfolio
         </h1>
-        <p class="text-base font-bold lg:w-[680px] mx-auto">
+        <p class="text-base font-bold w-[335px] lg:w-[680px] mx-auto">
           The barn house captivates with its blend of rustic charm and modern
           sophistication, featuring weathered wood, sleek metal accents.
         </p>
@@ -362,7 +368,7 @@
             <div class="">
               <img class="w-[287px]" src="./assets/img1.png" alt="" />
             </div>
-            <!-- text two  -->
+            <!-- text ONE  -->
             <div class="w- lg:w-[440px] lg:mr-12 space-y-4">
               <h4 class="font-extrabold text-2xl">Commercial</h4>
               <p class="text-[#737373] w-[287px]">
@@ -449,12 +455,16 @@
     <!-- DISCUSSION SECTION STARTED  -->
     <section>
       <div class="relative">
-        <img class="w-full lg:h-[915px]" src="./assets/bg.jpg" alt="" />
-        <div class="absolute top-1 lg:top-10 lg:left-[175px] p-10">
+        <img
+          class="w-full h-[930px] lg:h-[915px]"
+          src="./assets/bg.jpg"
+          alt=""
+        />
+        <div class="absolute -top-14 lg:top-10 lg:left-[175px] p-10">
           <div>
             <!-- let's connect top text  -->
             <div
-              class="mx-auto text-center flex justify-center items-center bg-[#FFFFFF] py-2 w-[250px] gap-x- rounded-2xl font-bold mt-8"
+              class="mx-auto text-center flex justify-center items-center bg-[#E5F2D5] py-2 w-[250px] gap-x- rounded-2xl font-bold mt-8"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -484,8 +494,9 @@
               accents.
             </p>
           </div>
+          <!-- FORM MAIN BODY  -->
           <div
-            class="grid grid-cols-2 justify-around mt-5 lg:w-[970px] border-2 border-red-700 mx-auto gap-6"
+            class="grid grid-cols-1 lg:grid-cols-2 lg:justify-around mt-5 lg:w-[970px] mx-auto gap-6"
           >
             <input
               class="lg:w-[473px] lg:h-[65px] p-5 rounded-xl"
@@ -508,7 +519,7 @@
               placeholder="Email"
             />
             <textarea
-              class="p-5 col-span-2 lg:h-[240px] rounded-xl"
+              class="p-5 lg:col-span-2 h-[240px] rounded-xl"
               name=""
               id=""
               placeholder="Write your text here"
@@ -517,7 +528,7 @@
             </textarea>
             <!-- BUTTON FOR FORM  -->
             <button
-              class="btn bg-[#ABEF5F] rounded-[32px] font-extrabold text-xl col-span-2"
+              class="btn bg-[#ABEF5F] rounded-[32px] font-extrabold text-xl lg:col-span-2"
             >
               Send Mail
               <svg
@@ -539,5 +550,56 @@
         </div>
       </div>
     </section>
+    <!-- FOOTER SECTION STARTED -->
+    <footer class="bg-[#1C1C1C] py-10 lg:py-20 px-10">
+      <div class="">
+        <!-- Logo -->
+        <a
+          class="btn btn-ghost text-3xl font-extrabold flex items-center text-white"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="h-6 w-6 rounded-[35px] p-1 bg-[#ABEF5F] -rotate-45 text-black"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+            />
+          </svg>
+          <span>Rinterio</span>
+        </a>
+      </div>
+      <p
+        class="text-base font-bold lg:w-[680px] mx-auto text-center text-[#737373] pt-4"
+      >
+        The barn house captivates with its blend of rustic charm and modern
+        sophistication, featuring weathered wood, sleek metal accents.
+      </p>
+      <div>
+        <ul
+          class="flex flex-col lg:flex-row justify-center items-center gap-y-3 lg:gap-x-10 text-white font-bold pt-12 px-[]"
+        >
+          <li>Home</li>
+          <li>Service</li>
+          <li>Portfolio</li>
+          <li>Blogs</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <button class="flex lg:justify-center lg:items-center mx-auto pt-12">
+        <a
+          class="btn bg-[#ABEF5F] rounded-3xl font-extrabold text-base lg:text-xl lg:flex w-[311px] lg:w-[212px]"
+          >Book Consult
+          <i
+            class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full p-1"
+          ></i>
+        </a>
+      </button>
+    </footer>
   </body>
 </html>
